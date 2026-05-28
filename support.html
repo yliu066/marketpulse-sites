@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support — MarketPulse</title>
+<meta name="description" content="MarketPulse support — contact, common questions, what to include in a bug report.">
+<style>
+  :root {
+    --bg: #0F172A;
+    --bg-card: #111827;
+    --text: #F8FAFC;
+    --text-muted: #94A3B8;
+    --text-faint: #64748B;
+    --accent: #3B82F6;
+    --border: rgba(255,255,255,0.08);
+  }
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--text); margin: 0; }
+  body {
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 40px 20px 80px;
+  }
+  main { max-width: 760px; margin: 0 auto; }
+  .crumb {
+    display: inline-block;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .crumb:hover { color: var(--accent); }
+  h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 0 0 4px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+  .updated {
+    color: var(--text-faint);
+    font-size: 13px;
+    margin: 0 0 32px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 36px 0 12px;
+    color: var(--text);
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 22px 0 8px;
+    color: var(--text);
+  }
+  p { color: var(--text-muted); margin: 0 0 14px; }
+  ul { color: var(--text-muted); padding-left: 22px; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  strong { color: var(--text); font-weight: 600; }
+  .contact {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 20px 0 28px;
+  }
+  .contact-row {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+  .contact-row:last-child { border-bottom: none; }
+  .contact-row .label {
+    color: var(--text-faint);
+    font-weight: 700;
+    min-width: 110px;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .contact-row .value { color: var(--text); }
+  .callout {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid #F59E0B;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin: 18px 0;
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-faint);
+    font-size: 12px;
+    line-height: 1.7;
+  }
+  footer a { color: var(--text-muted); }
+</style>
+</head>
+<body>
+<main>
+  <a class="crumb" href="index.html">← MarketPulse</a>
+  <h1>Support</h1>
+  <p class="updated">Last updated: 2026-05-28</p>
+
+  <p>
+    MarketPulse is an educational market sentiment app. It summarizes
+    public or delayed market sentiment data into a daily Pulse score,
+    historical context, and signal breakdowns. MarketPulse does not
+    provide financial advice, does not execute trades, and does not
+    connect to brokerage accounts.
+  </p>
+
+  <h2>Contact</h2>
+  <div class="contact">
+    <div class="contact-row">
+      <span class="label">Support email</span>
+      <span class="value"><a href="mailto:liu1998yuhao+marketpulse@gmail.com">liu1998yuhao+marketpulse@gmail.com</a></span>
+    </div>
+    <div class="contact-row">
+      <span class="label">Privacy policy</span>
+      <span class="value"><a href="privacy.html">marketpulse privacy</a></span>
+    </div>
+    <div class="contact-row">
+      <span class="label">API status</span>
+      <span class="value"><a href="https://marketpulse-api-mmrf.onrender.com/api/v1/health">/api/v1/health</a></span>
+    </div>
+  </div>
+
+  <h2>What to include in a support request</h2>
+  <ul>
+    <li>Your device model</li>
+    <li>Android version</li>
+    <li>MarketPulse app version (Settings → About)</li>
+    <li>Which screen you were on</li>
+    <li>The steps that caused the issue</li>
+    <li>A screenshot if it helps explain the issue</li>
+  </ul>
+  <div class="callout">
+    <strong>Do not send</strong> brokerage credentials, account numbers,
+    passwords, or private financial information. MarketPulse never asks
+    for any of these.
+  </div>
+
+  <h2>Common Questions</h2>
+
+  <h3>Why does the score differ from live market moves?</h3>
+  <p>
+    MarketPulse is a low-frequency sentiment app. It may use public,
+    delayed, or periodically refreshed data. It is designed for context,
+    not real-time trading.
+  </p>
+
+  <h3>Is MarketPulse financial advice?</h3>
+  <p>
+    No. MarketPulse is for education and informational context only. It
+    is not investment advice, trading advice, or a recommendation to buy
+    or sell securities.
+  </p>
+
+  <h3>Why does the home-screen widget or app icon not update instantly?</h3>
+  <p>
+    In the current release, the widget updates when you tap its refresh
+    ⟳ icon or when the app successfully refreshes Pulse data. The
+    dynamic launcher icon updates when the app loads new Pulse. Production
+    background push updates are not included yet.
+  </p>
+
+  <h3>What do the 14 indicators measure?</h3>
+  <p>
+    Tap the small ⓘ button on any indicator card inside the app to see a
+    plain-English explanation, the healthy range, and the update
+    frequency for that indicator.
+  </p>
+
+  <h3>How do I request deletion of feedback?</h3>
+  <p>
+    Email support with enough detail to identify your submission, such as
+    approximate date, platform, and feedback text. If you attached an
+    image, mention that too.
+  </p>
+
+  <h2>Response target</h2>
+  <p>
+    This is an early release. Support responses are best effort while
+    the product is in beta and store-review preparation. We aim to
+    reply within a few business days.
+  </p>
+
+  <footer>
+    MarketPulse · educational sentiment context, not financial advice.
+  </footer>
+</main>
+</body>
+</html>

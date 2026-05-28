@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MarketPulse — Calm daily market sentiment</title>
+<meta name="description" content="MarketPulse turns market sentiment data into one calm daily read. Educational use only.">
+<style>
+  :root {
+    --bg: #0F172A;
+    --bg-card: #111827;
+    --text: #F8FAFC;
+    --text-muted: #94A3B8;
+    --text-faint: #64748B;
+    --accent: #3B82F6;
+    --border: rgba(255,255,255,0.08);
+  }
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--text); }
+  body {
+    margin: 0;
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px;
+  }
+  main {
+    max-width: 720px;
+    width: 100%;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  .mascot {
+    width: 56px; height: 56px;
+    background: #F59E0B;
+    border-radius: 50%;
+    display: grid; place-items: center;
+    font-size: 32px;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 4px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+  .tagline {
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+  }
+  .lead {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin: 24px 0 32px;
+  }
+  .cards { display: grid; gap: 12px; margin-top: 28px; }
+  .card {
+    display: block;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .card:hover {
+    border-color: var(--accent);
+    transform: translateY(-1px);
+  }
+  .card-title {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .card-title-icon {
+    width: 22px; height: 22px;
+    display: grid; place-items: center;
+    color: var(--accent);
+  }
+  .card-desc {
+    margin: 6px 0 0;
+    color: var(--text-muted);
+    font-size: 13px;
+  }
+  footer {
+    margin-top: 56px;
+    color: var(--text-faint);
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.7;
+  }
+  footer a { color: var(--text-muted); }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <div class="mascot" aria-hidden="true">🙂</div>
+    <div>
+      <h1>MarketPulse</h1>
+      <p class="tagline">Calm daily market sentiment.</p>
+    </div>
+  </div>
+
+  <p class="lead">
+    One number that tells you the temperature of the US stock market today,
+    with plain-English history of similar past regimes. Built for daily
+    30-second reads, not for trading. Educational use only.
+  </p>
+
+  <div class="cards">
+    <a class="card" href="privacy.html">
+      <div class="card-title">
+        <span class="card-title-icon">🔒</span>
+        Privacy Policy
+      </div>
+      <p class="card-desc">What data MarketPulse collects, why, and how to ask us to delete it.</p>
+    </a>
+    <a class="card" href="support.html">
+      <div class="card-title">
+        <span class="card-title-icon">💬</span>
+        Support &amp; Contact
+      </div>
+      <p class="card-desc">How to reach us, what to include in a bug report, and common questions.</p>
+    </a>
+  </div>
+
+  <footer>
+    MarketPulse is for educational and informational purposes only.<br>
+    It is not financial advice, investment advice, or a recommendation
+    to buy or sell securities.
+  </footer>
+</main>
+</body>
+</html>
